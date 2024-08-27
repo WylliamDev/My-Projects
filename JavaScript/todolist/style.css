@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+body {
+    background: url(./img/background.png);
+}
+
+.container {
+    background-color: #d1d1d1;
+    width: 500px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 100px auto 0;
+}
+
+.inputtask {
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.btnaddtask {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    background-color: #5f9ea0;
+    color: #fff;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+}
+
+.btnaddtask:hover {
+    opacity: 0.8;
+}
+
+.btnaddtask:active {
+    opacity: 0.6;
+}
+
+.listtask {
+    width: 100%;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.task {
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer
+}
+
+img {
+    height: 20px;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+.task:hover img {
+    opacity: 1;
+}
+
+.done {
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
